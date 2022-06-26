@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<!--Content inside the <style is the design (the color loop)-->
+  <style>
+  body {
+	background: linear-gradient(-45deg, #FFBDA9, #FFEDF4, #B3EBFF, #C9FFF2);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+    <link rel="preconnect" href="https://assets.website-files.com/">
+
+<link rel="preload" as="image" href="https://assets.website-files.com/...hero.png" imagesrcset="https://assets.website-files.com/...hero-p-800.png 800w, https://assets.website-files.com/...hero.png 1400w" imagesizes="(max-width: 479px) 100vw, (max-width: 767px) 100, (max-width: 991px) 600px, 55vw">
+  </style>
+
+
+   <body>
+       <h1> {{ prediction }}</h1>
+       <a href="/" class="btn btn-primary">Try Again!</a>
+   </body>
+</html>
